@@ -231,12 +231,12 @@ GPUImageBeautifyFilter *fiter = [[GPUImageBeautifyFilter alloc] init];
 ### 3.6 实例代码在这里
 [美颜的使用](https://github.com/tiantianlan/LiveExplanation/tree/master/GPUImage)
 
-##4. 音视频编码，解码
+## 4. 音视频编码，解码
 这一章太难了，以后再写。
 ### VideoToolBox
 ### AudioToolBox
 
-##5. 流媒体服务器
+## 5. 流媒体服务器
 国内外有很多好用的流媒体服务区。这里为了方便搭建我们采用`nginx+RTMP`搭建流媒体服务器。
 ### 5.1 MAC环境搭建
 [MACOS上搭建nginx+rtmp环境](https://github.com/tiantianlan/LiveExplanation/blob/master/MACOS%E4%B8%8A%E6%90%AD%E5%BB%BAnginx%2Brtmp%E7%8E%AF%E5%A2%83.md)
