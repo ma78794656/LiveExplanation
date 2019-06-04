@@ -1,6 +1,6 @@
-#MACOS上搭建nginx+rtmp环境
+# MACOS上搭建nginx+rtmp环境
 
-##1.安装Homebrow
+## 1.安装Homebrow
 已经安装了brow的可以直接跳过这一步。
 
 查看是否安装：`brew -v`
@@ -15,7 +15,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ![](54167569.png)
 
-##2.安装Nginx
+## 2.安装Nginx
 clone nginx到本地
 
 `brew tap homebrew/nginx`
@@ -41,7 +41,7 @@ nginx安装所在位置：
 
 `/usr/local/etc/nginx/nginx.conf`
 
-##3.运行nginx
+## 3.运行nginx
 
 执行以下命令，测试是否能够启动服务：
 
@@ -53,7 +53,7 @@ nginx安装所在位置：
 如果出现如下图，则代表nginx安装成功了
 ![](54289471.png)
 
-##4.配置rtmp
+## 4.配置rtmp
 修改配置文件：
 
 `/usr/local/etc/nginx/nginx.conf`
@@ -84,7 +84,7 @@ rtmp {
 
 `nginx -s reload`
 
-##5.安装ffmepg工具
+## 5.安装ffmepg工具
 
 `brew install ffmpeg`
 
@@ -92,7 +92,7 @@ rtmp {
 
 ![](54461614.png)
 
-##6.ffmpeg推流
+## 6.ffmpeg推流
 准备一个视频文件来推流，再安装一个流媒体视频播放器。Mac下可以使用VLC.
 修改以下代码视频路径，进行推流。注意修改视频地址
 
@@ -102,6 +102,6 @@ rtmp {
 
 `rtmp://localhost:1935/rtmplive/room`
 
-##7.总结
+## 7.总结
 经过上面的步骤，如果你能在VLC通过地址看到测试视频，那么rtmp流媒体服务器就搭建完成了。
 ![](54598297.png)
